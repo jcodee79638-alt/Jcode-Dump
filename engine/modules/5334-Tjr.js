@@ -1,0 +1,46 @@
+
+var Tjr = {};
+ju(Tjr, {
+  Astro: () => r5a,
+  BashLS: () => l5a,
+  Biome: () => FGa,
+  CSharp: () => XGa,
+  Clangd: () => e5a,
+  Clojure: () => _5a,
+  Dart: () => A5a,
+  Deno: () => wGa,
+  DockerfileLS: () => d5a,
+  ESLint: () => UGa,
+  ElixirLS: () => qGa,
+  FSharp: () => QGa,
+  Gleam: () => m5a,
+  Gopls: () => BGa,
+  HLS: () => $5a,
+  JDTLS: () => i5a,
+  JuliaLS: () => g5a,
+  KotlinLS: () => s5a,
+  LuaLS: () => a5a,
+  Nixd: () => h5a,
+  Ocaml: () => u5a,
+  Oxlint: () => NGa,
+  PHPIntelephense: () => H5a,
+  Prisma: () => c5a,
+  Pyright: () => VGa,
+  Razor: () => JGa,
+  Rubocop: () => RGa,
+  RustAnalyzer: () => ZGa,
+  SourceKit: () => YGa,
+  Svelte: () => t5a,
+  TerraformLS: () => f5a,
+  TexLab: () => p5a,
+  Tinymist: () => L5a,
+  Ty: () => WGa,
+  Typescript: () => kGa,
+  Vue: () => OGa,
+  YamlLS: () => o5a,
+  Zls: () => GGa,
+});
+import hc from "path";
+import ZCe from "os";
+import { text as PGa } from "stream/consumers";
+import Y_ from "fs/promises";

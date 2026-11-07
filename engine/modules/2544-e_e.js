@@ -1,0 +1,35 @@
+
+var e_e = Ie(function (NFo, hg) {
+  var bw = Pei(),
+    plr = Gei(),
+    zSe = eti(),
+    dlr = rti(),
+    { clearMemoized: UFo } = z7e(),
+    VEt = DEt(),
+    Roe = kSe();
+  NFo.index = {};
+  NFo.index.compact = Roe.compact;
+  NFo.index.insert = Roe.insert;
+  NFo.ls = Roe.ls;
+  NFo.ls.stream = Roe.lsStream;
+  NFo.get = bw;
+  NFo.get.byDigest = bw.byDigest;
+  NFo.get.stream = bw.stream;
+  NFo.get.stream.byDigest = bw.stream.byDigest;
+  NFo.get.copy = bw.copy;
+  NFo.get.copy.byDigest = bw.copy.byDigest;
+  NFo.get.info = bw.info;
+  NFo.get.hasContent = bw.hasContent;
+  NFo.put = plr;
+  NFo.put.stream = plr.stream;
+  NFo.rm = zSe.entry;
+  NFo.rm.all = zSe.all;
+  NFo.rm.entry = NFo.rm;
+  NFo.rm.content = zSe.content;
+  NFo.clearMemoized = UFo;
+  NFo.tmp = {};
+  NFo.tmp.mkdir = VEt.mkdir;
+  NFo.tmp.withTmp = VEt.withTmp;
+  NFo.verify = dlr;
+  NFo.verify.lastRun = dlr.lastRun;
+});

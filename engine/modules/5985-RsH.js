@@ -1,0 +1,2 @@
+
+var RsH, WsH, gwr;

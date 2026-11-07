@@ -1,0 +1,2 @@
+
+var rGs, nGs, Ad;

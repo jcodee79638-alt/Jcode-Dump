@@ -1,0 +1,49 @@
+
+var Znr = ne(() => {
+  Gt();
+  Cf();
+  UG();
+  gY();
+  OMe();
+  FG();
+  GS();
+  ((xzs = new Set([
+    "content",
+    "contents",
+    "frequencyPenalty",
+    "frequency_penalty",
+    "generationConfig",
+    "inferenceConfig",
+    "input",
+    "maxTokens",
+    "max_tokens",
+    "messages",
+    "model",
+    "presencePenalty",
+    "presence_penalty",
+    "responseFormat",
+    "response_format",
+    "seed",
+    "stop",
+    "stopSequences",
+    "stop_sequences",
+    "stream",
+    "streamOptions",
+    "stream_options",
+    "system",
+    "systemInstruction",
+    "system_instruction",
+    "temperature",
+    "thinking",
+    "toolChoice",
+    "toolConfig",
+    "tool_choice",
+    "tool_config",
+    "tools",
+    "topK",
+    "topP",
+    "top_k",
+    "top_p",
+  ])),
+    (RIn = { id: "http-json/sse", with: () => Ynr({ framing: znr }) }));
+});

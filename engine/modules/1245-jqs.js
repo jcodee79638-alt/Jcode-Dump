@@ -1,0 +1,2 @@
+
+var jqs, rLn, nLn;

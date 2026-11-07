@@ -1,0 +1,2 @@
+
+var ydt, jtr, HxH;

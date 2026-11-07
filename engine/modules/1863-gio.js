@@ -1,0 +1,2 @@
+
+var gio, Eio, Iio;

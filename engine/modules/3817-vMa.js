@@ -1,0 +1,4 @@
+
+function vMa() {
+  return NN();
+}

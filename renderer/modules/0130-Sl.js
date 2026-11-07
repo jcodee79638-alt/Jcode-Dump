@@ -1,0 +1,115 @@
+
+var Sl = o('<button aria-label="Task report"><span>Task report'),
+  jl = o('<button aria-label="Project context"><span>Project context'),
+  Tl = o("<button aria-label=Preview><span>Preview"),
+  Al = o(
+    '<nav class=workspace-toolstrip aria-label="Task tools"><button aria-label="Task inbox"><span>Task inbox</span></button><span class=toolstrip-local>Saved on this computer',
+  ),
+  El = o("<button class=button>Continue safely"),
+  Pl = o(
+    '<section class=saved-task-error aria-label="Saved task recovery"><div><strong>This request needs attention</strong><p>Your saved conversation is available. Refresh it to review the latest state.</p><small>Support ID: </small></div><div><button class=button>Refresh saved chat',
+  ),
+  Rl = o("<span class=tool-badge>"),
+  Il = o("<div class=task-panel-error role=alert><p></p><button class=text-button>Refresh"),
+  ql = o("<div class=task-panel-intro><p>Return to saved work and review what needs your attention."),
+  Ll = o("<div class=task-inbox-list>"),
+  Ml = o("<div class=task-panel-scroll>"),
+  Dl = o("<aside class=task-workspace><header class=task-panel-header><div><h2>"),
+  Nl = o("<div class=task-empty><h3>No saved tasks yet</h3><p>Your next request will appear here."),
+  zl = o(
+    "<button class=task-inbox-row><span></span><span class=task-inbox-copy><strong></strong><span> · </span><small> files · <!> verified checks passed",
+  ),
+  Ol = o('<button class="text-button original-task">Compare with original task'),
+  Ul = o(
+    "<p class=task-help>This branch has its own folder. Review the original report to compare its recorded file changes.",
+  ),
+  Fl = o(
+    "<div class=task-empty><h3>No saved task report</h3><p>Reports appear after you send a new request. Earlier conversations remain in your history.",
+  ),
+  Jl = o("<div class=task-report-title><span></span><h3></h3><p>Support ID <code>"),
+  Bl = o("<label class=field-label>Saved request<select class=input>"),
+  Hl = o("<button class=button>Fix failed checks"),
+  Wl = o(
+    "<section class=report-section><div class=report-section-heading><h3>Verified checks</h3><span> passed</span></div><p class=task-help>Checks backed by recorded tool results.",
+  ),
+  Yl = o(
+    "<section class=report-section><h3>Checkpoint & branches</h3><p class=task-help></p><div class=report-actions><button class=button>Restore checkpoint</button><button class=button>Branch task",
+  ),
+  Ai = o("<option> · "),
+  Vl = o("<p class=task-unverified>Unknown — no check result was recorded."),
+  Kl = o("<p>Exit code "),
+  Zl = o("<pre>"),
+  Gl = o("<details><summary><span></span><strong>"),
+  Ql = o("<p>Kept <!> conflicting files:"),
+  Xl = o("<ul>"),
+  eo = o("<p>No file conflicts were reported."),
+  to = o("<div class=restore-result role=status><strong> files restored"),
+  no = o("<li>"),
+  ro = o("<p class=task-help role=status>Artifact ZIP saved."),
+  io = o(
+    '<section class="report-section artifact-tray"aria-label="Task artifacts"><div class=report-section-heading><h3>Files & artifacts</h3><button class=text-button>Export ZIP</button></div><p class=task-help> recorded file changes in this request.',
+  ),
+  ao = o("<p class=task-unverified>No file changes were recorded."),
+  so = o(
+    "<div class=task-file><div><span></span><span></span></div><div class=task-file-actions><button class=text-button>Compare</button><button class=text-button>Open",
+  ),
+  lo = o(
+    "<p class=task-unverified>Undo unavailable: this file changed after the task, was already restored, or its checkpoint is unavailable.",
+  ),
+  oo = o(
+    "<div class=task-file-diff><div class=report-section-heading><h3></h3></div><p class=task-help>Saved task comparison</p><button class=button>Undo this file</button><p class=task-help>A confirmation opens before restoration. Later edits are kept. Each file is restored independently.",
+  ),
+  co = o("<div class=file-undo-result role=status>"),
+  uo = o("<button class=button>Reconnect live output"),
+  ho = o("<button class=button>Review answers and permissions"),
+  go = o("<button class=button>Usage and limits"),
+  fo = o("<button class=button>Sign in"),
+  vo = o("<button class=button>Check for updates"),
+  mo = o('<button class="button primary">Continue safely'),
+  $o = o(
+    '<section class=task-recovery aria-label="Task recovery"><h3></h3><p></p><div class=history-actions><button class=button>Refresh saved chat</button></div><p class=task-help>Reconnecting only observes existing work. Continuing sends a new request using your current access and allowance.',
+  ),
+  po = o(
+    '<section class=report-section aria-label="Completion review"><div class=report-section-heading><h3>Completion review</h3><span></span></div><p class=task-help>Expected checks are matched to recorded command exits.',
+  ),
+  bo = o(
+    "<p class=task-help>The timeline reached its 500 observation limit. Some observations were omitted.",
+  ),
+  wo = o(
+    '<section class=report-section aria-label="Task timeline"><div class=report-section-heading><h3>Task timeline</h3><span> observations</span></div><details class="tools-disclosure task-timeline-disclosure"><summary>View observed activity</summary><p class=task-help>Observed tools, files and checks. Tool output and private reasoning are omitted.</p><ol class=task-timeline>',
+  ),
+  _o = o(
+    '<section class=report-section aria-label="Compare task alternatives"><h3>Compare alternatives</h3><p class=task-help>Compare captured task results and real check outcomes. Your current files are not changed.</p><label class=field-label>Alternative task<select class=input aria-label="Alternative task"><option value>Choose a finished task</option></select></label><button class=button>Compare saved tasks',
+  ),
+  yo = o("<button class=button>Export support report"),
+  ko = o("<p class=task-help role=status>Support report saved."),
+  xo = o(
+    '<section class=report-section aria-label="Support report"><h3>Support report</h3><p class=task-help>Preview a sanitized report on this computer before exporting it. Nothing is uploaded.</p><div class=history-actions><button class=button>Preview support report',
+  ),
+  Co = o("<p class=task-unverified role=status>Some report details could not be refreshed."),
+  So = o("<p class=task-unverified>Expected checks are unavailable. Refresh this report to retry."),
+  jo = o("<ul class=expected-checks>"),
+  To = o("<p class=completion-missing role=status> expected <!> verification."),
+  Ao = o("<button class=button>Ask to verify missing checks"),
+  Eo = o(
+    "<p class=task-help>No project checks are configured. Save build and test commands in the project’s run profiles.",
+  ),
+  Po = o("<li><code></code><span>"),
+  Ro = o("<li class=timeline-empty>No lifecycle observations were saved for this task."),
+  Io = o("<code>"),
+  qo = o("<li><time></time><div><strong></strong><span>"),
+  Lo = o("<p class=task-help>This comparison is partial because a checkpoint or display limit was reached."),
+  Mo = o(
+    "<div class=task-alternatives><div class=alternative-labels><strong>Original: </strong><strong>Alternative: </strong></div><h4>Recorded checks",
+  ),
+  Do = o("<p class=task-help>No captured file differences were found."),
+  No = o("<details class=alternative-file><summary><span>"),
+  zo = o("<p class=task-unverified>Neither task recorded a check result."),
+  Oo = o("<p><span></span><code></code><strong>"),
+  Uo = o("<details class=support-report-preview open><summary>Sanitized report preview</summary><pre>"),
+  Fo = o("<p class=inline-error role=alert>"),
+  Jo = o("<p class=task-help role=status>Project notes saved."),
+  Bo = o("<small class=task-help>Updated "),
+  Ho = o(
+    '<form class="task-panel-scroll project-notes"><p class=task-help>Saved notes are included in new requests for this folder.</p><label class=field-label>Project notes<textarea class="input context-notes"maxlength=8000 placeholder="Useful conventions, decisions, and things to remember…"></textarea></label><div class=report-section-heading><span class=task-help> / 8,000</span><button type=submit class="button primary"></button></div><section class=report-section><h3>Saved summary</h3><p class=context-summary>',
+  );

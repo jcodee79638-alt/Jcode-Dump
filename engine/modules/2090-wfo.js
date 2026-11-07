@@ -1,0 +1,2 @@
+
+var wfo, kfo;

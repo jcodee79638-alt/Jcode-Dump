@@ -1,0 +1,27 @@
+
+var Sa = o("<span class=mini-mark>J"),
+  Gr = o("<p class=inline-error>"),
+  ja = o("<article><div class=message-byline></div><div class=message-content>"),
+  Ta = o("<div class=message-file><span>"),
+  Aa = o('<pre class=tool-output tabindex=0 aria-label="Tool output">'),
+  Ea = o("<button class=text-button>"),
+  Pa = o("<details class=tool-card><summary><span></span><span>"),
+  Ra = o("<div class=step-label>"),
+  Ia = o("<div class=prose>"),
+  qa = o("<ul>"),
+  La = o("<ol>"),
+  Ma = o("<h3>"),
+  Da = o("<p>"),
+  Qr = o("<li>"),
+  Na = o("<code>"),
+  za = o("<strong>"),
+  Oa = o("<p class=code-copy-error role=status>Could not copy. Select the code and copy it manually."),
+  Ua = o(
+    "<div class=code-block><div class=code-language><span></span><button type=button class=code-copy><span aria-live=polite></span></button></div><pre tabindex=0><code>",
+  ),
+  Fa = o(
+    '<section class="request-card question-card"><div class=request-heading><strong></strong></div><div class=request-actions><button class=text-button></button><button class="button primary">',
+  ),
+  Ja = o("<input class=input>"),
+  Ba = o("<fieldset><legend><span class=eyebrow></span></legend><div class=question-options>"),
+  Ha = o("<label class=question-option><input><span><strong></strong><small>");

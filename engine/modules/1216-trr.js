@@ -1,0 +1,2 @@
+
+var trr, omt;

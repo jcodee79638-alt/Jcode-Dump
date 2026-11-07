@@ -1,0 +1,2 @@
+
+var bJt, jJt;

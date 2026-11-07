@@ -1,0 +1,17 @@
+
+var IR,
+  KtH,
+  NbA,
+  FbA,
+  N7,
+  YtH,
+  ZtH,
+  erH,
+  trH,
+  rrH,
+  gZi = "https://opencode.ai/v2/docs",
+  d$e,
+  BbA,
+  nrH,
+  mCr,
+  RbA;

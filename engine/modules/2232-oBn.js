@@ -1,0 +1,1045 @@
+
+var oBn = Ie(function (Z2n) {
+  Object.defineProperty(Z2n, "__esModule", { value: !0 });
+  Z2n.SEMATTRS_NET_HOST_CARRIER_ICC =
+    Z2n.SEMATTRS_NET_HOST_CARRIER_MNC =
+    Z2n.SEMATTRS_NET_HOST_CARRIER_MCC =
+    Z2n.SEMATTRS_NET_HOST_CARRIER_NAME =
+    Z2n.SEMATTRS_NET_HOST_CONNECTION_SUBTYPE =
+    Z2n.SEMATTRS_NET_HOST_CONNECTION_TYPE =
+    Z2n.SEMATTRS_NET_HOST_NAME =
+    Z2n.SEMATTRS_NET_HOST_PORT =
+    Z2n.SEMATTRS_NET_HOST_IP =
+    Z2n.SEMATTRS_NET_PEER_NAME =
+    Z2n.SEMATTRS_NET_PEER_PORT =
+    Z2n.SEMATTRS_NET_PEER_IP =
+    Z2n.SEMATTRS_NET_TRANSPORT =
+    Z2n.SEMATTRS_FAAS_INVOKED_REGION =
+    Z2n.SEMATTRS_FAAS_INVOKED_PROVIDER =
+    Z2n.SEMATTRS_FAAS_INVOKED_NAME =
+    Z2n.SEMATTRS_FAAS_COLDSTART =
+    Z2n.SEMATTRS_FAAS_CRON =
+    Z2n.SEMATTRS_FAAS_TIME =
+    Z2n.SEMATTRS_FAAS_DOCUMENT_NAME =
+    Z2n.SEMATTRS_FAAS_DOCUMENT_TIME =
+    Z2n.SEMATTRS_FAAS_DOCUMENT_OPERATION =
+    Z2n.SEMATTRS_FAAS_DOCUMENT_COLLECTION =
+    Z2n.SEMATTRS_FAAS_EXECUTION =
+    Z2n.SEMATTRS_FAAS_TRIGGER =
+    Z2n.SEMATTRS_EXCEPTION_ESCAPED =
+    Z2n.SEMATTRS_EXCEPTION_STACKTRACE =
+    Z2n.SEMATTRS_EXCEPTION_MESSAGE =
+    Z2n.SEMATTRS_EXCEPTION_TYPE =
+    Z2n.SEMATTRS_DB_SQL_TABLE =
+    Z2n.SEMATTRS_DB_MONGODB_COLLECTION =
+    Z2n.SEMATTRS_DB_REDIS_DATABASE_INDEX =
+    Z2n.SEMATTRS_DB_HBASE_NAMESPACE =
+    Z2n.SEMATTRS_DB_CASSANDRA_COORDINATOR_DC =
+    Z2n.SEMATTRS_DB_CASSANDRA_COORDINATOR_ID =
+    Z2n.SEMATTRS_DB_CASSANDRA_SPECULATIVE_EXECUTION_COUNT =
+    Z2n.SEMATTRS_DB_CASSANDRA_IDEMPOTENCE =
+    Z2n.SEMATTRS_DB_CASSANDRA_TABLE =
+    Z2n.SEMATTRS_DB_CASSANDRA_CONSISTENCY_LEVEL =
+    Z2n.SEMATTRS_DB_CASSANDRA_PAGE_SIZE =
+    Z2n.SEMATTRS_DB_CASSANDRA_KEYSPACE =
+    Z2n.SEMATTRS_DB_MSSQL_INSTANCE_NAME =
+    Z2n.SEMATTRS_DB_OPERATION =
+    Z2n.SEMATTRS_DB_STATEMENT =
+    Z2n.SEMATTRS_DB_NAME =
+    Z2n.SEMATTRS_DB_JDBC_DRIVER_CLASSNAME =
+    Z2n.SEMATTRS_DB_USER =
+    Z2n.SEMATTRS_DB_CONNECTION_STRING =
+    Z2n.SEMATTRS_DB_SYSTEM =
+    Z2n.SEMATTRS_AWS_LAMBDA_INVOKED_ARN =
+      void 0;
+  Z2n.SEMATTRS_MESSAGING_DESTINATION_KIND =
+    Z2n.SEMATTRS_MESSAGING_DESTINATION =
+    Z2n.SEMATTRS_MESSAGING_SYSTEM =
+    Z2n.SEMATTRS_AWS_DYNAMODB_GLOBAL_SECONDARY_INDEX_UPDATES =
+    Z2n.SEMATTRS_AWS_DYNAMODB_ATTRIBUTE_DEFINITIONS =
+    Z2n.SEMATTRS_AWS_DYNAMODB_SCANNED_COUNT =
+    Z2n.SEMATTRS_AWS_DYNAMODB_COUNT =
+    Z2n.SEMATTRS_AWS_DYNAMODB_TOTAL_SEGMENTS =
+    Z2n.SEMATTRS_AWS_DYNAMODB_SEGMENT =
+    Z2n.SEMATTRS_AWS_DYNAMODB_SCAN_FORWARD =
+    Z2n.SEMATTRS_AWS_DYNAMODB_TABLE_COUNT =
+    Z2n.SEMATTRS_AWS_DYNAMODB_EXCLUSIVE_START_TABLE =
+    Z2n.SEMATTRS_AWS_DYNAMODB_LOCAL_SECONDARY_INDEXES =
+    Z2n.SEMATTRS_AWS_DYNAMODB_GLOBAL_SECONDARY_INDEXES =
+    Z2n.SEMATTRS_AWS_DYNAMODB_SELECT =
+    Z2n.SEMATTRS_AWS_DYNAMODB_INDEX_NAME =
+    Z2n.SEMATTRS_AWS_DYNAMODB_ATTRIBUTES_TO_GET =
+    Z2n.SEMATTRS_AWS_DYNAMODB_LIMIT =
+    Z2n.SEMATTRS_AWS_DYNAMODB_PROJECTION =
+    Z2n.SEMATTRS_AWS_DYNAMODB_CONSISTENT_READ =
+    Z2n.SEMATTRS_AWS_DYNAMODB_PROVISIONED_WRITE_CAPACITY =
+    Z2n.SEMATTRS_AWS_DYNAMODB_PROVISIONED_READ_CAPACITY =
+    Z2n.SEMATTRS_AWS_DYNAMODB_ITEM_COLLECTION_METRICS =
+    Z2n.SEMATTRS_AWS_DYNAMODB_CONSUMED_CAPACITY =
+    Z2n.SEMATTRS_AWS_DYNAMODB_TABLE_NAMES =
+    Z2n.SEMATTRS_HTTP_CLIENT_IP =
+    Z2n.SEMATTRS_HTTP_ROUTE =
+    Z2n.SEMATTRS_HTTP_SERVER_NAME =
+    Z2n.SEMATTRS_HTTP_RESPONSE_CONTENT_LENGTH_UNCOMPRESSED =
+    Z2n.SEMATTRS_HTTP_RESPONSE_CONTENT_LENGTH =
+    Z2n.SEMATTRS_HTTP_REQUEST_CONTENT_LENGTH_UNCOMPRESSED =
+    Z2n.SEMATTRS_HTTP_REQUEST_CONTENT_LENGTH =
+    Z2n.SEMATTRS_HTTP_USER_AGENT =
+    Z2n.SEMATTRS_HTTP_FLAVOR =
+    Z2n.SEMATTRS_HTTP_STATUS_CODE =
+    Z2n.SEMATTRS_HTTP_SCHEME =
+    Z2n.SEMATTRS_HTTP_HOST =
+    Z2n.SEMATTRS_HTTP_TARGET =
+    Z2n.SEMATTRS_HTTP_URL =
+    Z2n.SEMATTRS_HTTP_METHOD =
+    Z2n.SEMATTRS_CODE_LINENO =
+    Z2n.SEMATTRS_CODE_FILEPATH =
+    Z2n.SEMATTRS_CODE_NAMESPACE =
+    Z2n.SEMATTRS_CODE_FUNCTION =
+    Z2n.SEMATTRS_THREAD_NAME =
+    Z2n.SEMATTRS_THREAD_ID =
+    Z2n.SEMATTRS_ENDUSER_SCOPE =
+    Z2n.SEMATTRS_ENDUSER_ROLE =
+    Z2n.SEMATTRS_ENDUSER_ID =
+    Z2n.SEMATTRS_PEER_SERVICE =
+      void 0;
+  Z2n.DBSYSTEMVALUES_FILEMAKER =
+    Z2n.DBSYSTEMVALUES_DERBY =
+    Z2n.DBSYSTEMVALUES_FIREBIRD =
+    Z2n.DBSYSTEMVALUES_ADABAS =
+    Z2n.DBSYSTEMVALUES_CACHE =
+    Z2n.DBSYSTEMVALUES_EDB =
+    Z2n.DBSYSTEMVALUES_FIRSTSQL =
+    Z2n.DBSYSTEMVALUES_INGRES =
+    Z2n.DBSYSTEMVALUES_HANADB =
+    Z2n.DBSYSTEMVALUES_MAXDB =
+    Z2n.DBSYSTEMVALUES_PROGRESS =
+    Z2n.DBSYSTEMVALUES_HSQLDB =
+    Z2n.DBSYSTEMVALUES_CLOUDSCAPE =
+    Z2n.DBSYSTEMVALUES_HIVE =
+    Z2n.DBSYSTEMVALUES_REDSHIFT =
+    Z2n.DBSYSTEMVALUES_POSTGRESQL =
+    Z2n.DBSYSTEMVALUES_DB2 =
+    Z2n.DBSYSTEMVALUES_ORACLE =
+    Z2n.DBSYSTEMVALUES_MYSQL =
+    Z2n.DBSYSTEMVALUES_MSSQL =
+    Z2n.DBSYSTEMVALUES_OTHER_SQL =
+    Z2n.SemanticAttributes =
+    Z2n.SEMATTRS_MESSAGE_UNCOMPRESSED_SIZE =
+    Z2n.SEMATTRS_MESSAGE_COMPRESSED_SIZE =
+    Z2n.SEMATTRS_MESSAGE_ID =
+    Z2n.SEMATTRS_MESSAGE_TYPE =
+    Z2n.SEMATTRS_RPC_JSONRPC_ERROR_MESSAGE =
+    Z2n.SEMATTRS_RPC_JSONRPC_ERROR_CODE =
+    Z2n.SEMATTRS_RPC_JSONRPC_REQUEST_ID =
+    Z2n.SEMATTRS_RPC_JSONRPC_VERSION =
+    Z2n.SEMATTRS_RPC_GRPC_STATUS_CODE =
+    Z2n.SEMATTRS_RPC_METHOD =
+    Z2n.SEMATTRS_RPC_SERVICE =
+    Z2n.SEMATTRS_RPC_SYSTEM =
+    Z2n.SEMATTRS_MESSAGING_KAFKA_TOMBSTONE =
+    Z2n.SEMATTRS_MESSAGING_KAFKA_PARTITION =
+    Z2n.SEMATTRS_MESSAGING_KAFKA_CLIENT_ID =
+    Z2n.SEMATTRS_MESSAGING_KAFKA_CONSUMER_GROUP =
+    Z2n.SEMATTRS_MESSAGING_KAFKA_MESSAGE_KEY =
+    Z2n.SEMATTRS_MESSAGING_RABBITMQ_ROUTING_KEY =
+    Z2n.SEMATTRS_MESSAGING_CONSUMER_ID =
+    Z2n.SEMATTRS_MESSAGING_OPERATION =
+    Z2n.SEMATTRS_MESSAGING_MESSAGE_PAYLOAD_COMPRESSED_SIZE_BYTES =
+    Z2n.SEMATTRS_MESSAGING_MESSAGE_PAYLOAD_SIZE_BYTES =
+    Z2n.SEMATTRS_MESSAGING_CONVERSATION_ID =
+    Z2n.SEMATTRS_MESSAGING_MESSAGE_ID =
+    Z2n.SEMATTRS_MESSAGING_URL =
+    Z2n.SEMATTRS_MESSAGING_PROTOCOL_VERSION =
+    Z2n.SEMATTRS_MESSAGING_PROTOCOL =
+    Z2n.SEMATTRS_MESSAGING_TEMP_DESTINATION =
+      void 0;
+  Z2n.FAASINVOKEDPROVIDERVALUES_ALIBABA_CLOUD =
+    Z2n.FaasDocumentOperationValues =
+    Z2n.FAASDOCUMENTOPERATIONVALUES_DELETE =
+    Z2n.FAASDOCUMENTOPERATIONVALUES_EDIT =
+    Z2n.FAASDOCUMENTOPERATIONVALUES_INSERT =
+    Z2n.FaasTriggerValues =
+    Z2n.FAASTRIGGERVALUES_OTHER =
+    Z2n.FAASTRIGGERVALUES_TIMER =
+    Z2n.FAASTRIGGERVALUES_PUBSUB =
+    Z2n.FAASTRIGGERVALUES_HTTP =
+    Z2n.FAASTRIGGERVALUES_DATASOURCE =
+    Z2n.DbCassandraConsistencyLevelValues =
+    Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_LOCAL_SERIAL =
+    Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_SERIAL =
+    Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_ANY =
+    Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_LOCAL_ONE =
+    Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_THREE =
+    Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_TWO =
+    Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_ONE =
+    Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_LOCAL_QUORUM =
+    Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_QUORUM =
+    Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_EACH_QUORUM =
+    Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_ALL =
+    Z2n.DbSystemValues =
+    Z2n.DBSYSTEMVALUES_COCKROACHDB =
+    Z2n.DBSYSTEMVALUES_MEMCACHED =
+    Z2n.DBSYSTEMVALUES_ELASTICSEARCH =
+    Z2n.DBSYSTEMVALUES_GEODE =
+    Z2n.DBSYSTEMVALUES_NEO4J =
+    Z2n.DBSYSTEMVALUES_DYNAMODB =
+    Z2n.DBSYSTEMVALUES_COSMOSDB =
+    Z2n.DBSYSTEMVALUES_COUCHDB =
+    Z2n.DBSYSTEMVALUES_COUCHBASE =
+    Z2n.DBSYSTEMVALUES_REDIS =
+    Z2n.DBSYSTEMVALUES_MONGODB =
+    Z2n.DBSYSTEMVALUES_HBASE =
+    Z2n.DBSYSTEMVALUES_CASSANDRA =
+    Z2n.DBSYSTEMVALUES_COLDFUSION =
+    Z2n.DBSYSTEMVALUES_H2 =
+    Z2n.DBSYSTEMVALUES_VERTICA =
+    Z2n.DBSYSTEMVALUES_TERADATA =
+    Z2n.DBSYSTEMVALUES_SYBASE =
+    Z2n.DBSYSTEMVALUES_SQLITE =
+    Z2n.DBSYSTEMVALUES_POINTBASE =
+    Z2n.DBSYSTEMVALUES_PERVASIVE =
+    Z2n.DBSYSTEMVALUES_NETEZZA =
+    Z2n.DBSYSTEMVALUES_MARIADB =
+    Z2n.DBSYSTEMVALUES_INTERBASE =
+    Z2n.DBSYSTEMVALUES_INSTANTDB =
+    Z2n.DBSYSTEMVALUES_INFORMIX =
+      void 0;
+  Z2n.MESSAGINGOPERATIONVALUES_RECEIVE =
+    Z2n.MessagingDestinationKindValues =
+    Z2n.MESSAGINGDESTINATIONKINDVALUES_TOPIC =
+    Z2n.MESSAGINGDESTINATIONKINDVALUES_QUEUE =
+    Z2n.HttpFlavorValues =
+    Z2n.HTTPFLAVORVALUES_QUIC =
+    Z2n.HTTPFLAVORVALUES_SPDY =
+    Z2n.HTTPFLAVORVALUES_HTTP_2_0 =
+    Z2n.HTTPFLAVORVALUES_HTTP_1_1 =
+    Z2n.HTTPFLAVORVALUES_HTTP_1_0 =
+    Z2n.NetHostConnectionSubtypeValues =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_LTE_CA =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_NRNSA =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_NR =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_IWLAN =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_TD_SCDMA =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_GSM =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_HSPAP =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_EHRPD =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_LTE =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_EVDO_B =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_IDEN =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_HSPA =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_HSUPA =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_HSDPA =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_CDMA2000_1XRTT =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_EVDO_A =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_EVDO_0 =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_CDMA =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_UMTS =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_EDGE =
+    Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_GPRS =
+    Z2n.NetHostConnectionTypeValues =
+    Z2n.NETHOSTCONNECTIONTYPEVALUES_UNKNOWN =
+    Z2n.NETHOSTCONNECTIONTYPEVALUES_UNAVAILABLE =
+    Z2n.NETHOSTCONNECTIONTYPEVALUES_CELL =
+    Z2n.NETHOSTCONNECTIONTYPEVALUES_WIRED =
+    Z2n.NETHOSTCONNECTIONTYPEVALUES_WIFI =
+    Z2n.NetTransportValues =
+    Z2n.NETTRANSPORTVALUES_OTHER =
+    Z2n.NETTRANSPORTVALUES_INPROC =
+    Z2n.NETTRANSPORTVALUES_PIPE =
+    Z2n.NETTRANSPORTVALUES_UNIX =
+    Z2n.NETTRANSPORTVALUES_IP =
+    Z2n.NETTRANSPORTVALUES_IP_UDP =
+    Z2n.NETTRANSPORTVALUES_IP_TCP =
+    Z2n.FaasInvokedProviderValues =
+    Z2n.FAASINVOKEDPROVIDERVALUES_GCP =
+    Z2n.FAASINVOKEDPROVIDERVALUES_AZURE =
+    Z2n.FAASINVOKEDPROVIDERVALUES_AWS =
+      void 0;
+  Z2n.MessageTypeValues =
+    Z2n.MESSAGETYPEVALUES_RECEIVED =
+    Z2n.MESSAGETYPEVALUES_SENT =
+    Z2n.RpcGrpcStatusCodeValues =
+    Z2n.RPCGRPCSTATUSCODEVALUES_UNAUTHENTICATED =
+    Z2n.RPCGRPCSTATUSCODEVALUES_DATA_LOSS =
+    Z2n.RPCGRPCSTATUSCODEVALUES_UNAVAILABLE =
+    Z2n.RPCGRPCSTATUSCODEVALUES_INTERNAL =
+    Z2n.RPCGRPCSTATUSCODEVALUES_UNIMPLEMENTED =
+    Z2n.RPCGRPCSTATUSCODEVALUES_OUT_OF_RANGE =
+    Z2n.RPCGRPCSTATUSCODEVALUES_ABORTED =
+    Z2n.RPCGRPCSTATUSCODEVALUES_FAILED_PRECONDITION =
+    Z2n.RPCGRPCSTATUSCODEVALUES_RESOURCE_EXHAUSTED =
+    Z2n.RPCGRPCSTATUSCODEVALUES_PERMISSION_DENIED =
+    Z2n.RPCGRPCSTATUSCODEVALUES_ALREADY_EXISTS =
+    Z2n.RPCGRPCSTATUSCODEVALUES_NOT_FOUND =
+    Z2n.RPCGRPCSTATUSCODEVALUES_DEADLINE_EXCEEDED =
+    Z2n.RPCGRPCSTATUSCODEVALUES_INVALID_ARGUMENT =
+    Z2n.RPCGRPCSTATUSCODEVALUES_UNKNOWN =
+    Z2n.RPCGRPCSTATUSCODEVALUES_CANCELLED =
+    Z2n.RPCGRPCSTATUSCODEVALUES_OK =
+    Z2n.MessagingOperationValues =
+    Z2n.MESSAGINGOPERATIONVALUES_PROCESS =
+      void 0;
+  var vE = scr(),
+    AUn = "aws.lambda.invoked_arn",
+    uUn = "db.system",
+    lUn = "db.connection_string",
+    fUn = "db.user",
+    pUn = "db.jdbc.driver_classname",
+    dUn = "db.name",
+    mUn = "db.statement",
+    _Un = "db.operation",
+    hUn = "db.mssql.instance_name",
+    LUn = "db.cassandra.keyspace",
+    $Un = "db.cassandra.page_size",
+    gUn = "db.cassandra.consistency_level",
+    EUn = "db.cassandra.table",
+    IUn = "db.cassandra.idempotence",
+    DUn = "db.cassandra.speculative_execution_count",
+    yUn = "db.cassandra.coordinator.id",
+    MUn = "db.cassandra.coordinator.dc",
+    xUn = "db.hbase.namespace",
+    SUn = "db.redis.database_index",
+    TUn = "db.mongodb.collection",
+    vUn = "db.sql.table",
+    bUn = "exception.type",
+    jUn = "exception.message",
+    PUn = "exception.stacktrace",
+    CUn = "exception.escaped",
+    wUn = "faas.trigger",
+    kUn = "faas.execution",
+    OUn = "faas.document.collection",
+    UUn = "faas.document.operation",
+    NUn = "faas.document.time",
+    FUn = "faas.document.name",
+    BUn = "faas.time",
+    RUn = "faas.cron",
+    WUn = "faas.coldstart",
+    VUn = "faas.invoked_name",
+    qUn = "faas.invoked_provider",
+    GUn = "faas.invoked_region",
+    XUn = "net.transport",
+    JUn = "net.peer.ip",
+    KUn = "net.peer.port",
+    zUn = "net.peer.name",
+    QUn = "net.host.ip",
+    YUn = "net.host.port",
+    ZUn = "net.host.name",
+    eNn = "net.host.connection.type",
+    tNn = "net.host.connection.subtype",
+    rNn = "net.host.carrier.name",
+    nNn = "net.host.carrier.mcc",
+    iNn = "net.host.carrier.mnc",
+    sNn = "net.host.carrier.icc",
+    oNn = "peer.service",
+    aNn = "enduser.id",
+    HNn = "enduser.role",
+    cNn = "enduser.scope",
+    ANn = "thread.id",
+    uNn = "thread.name",
+    lNn = "code.function",
+    fNn = "code.namespace",
+    pNn = "code.filepath",
+    dNn = "code.lineno",
+    mNn = "http.method",
+    _Nn = "http.url",
+    hNn = "http.target",
+    LNn = "http.host",
+    $Nn = "http.scheme",
+    gNn = "http.status_code",
+    ENn = "http.flavor",
+    INn = "http.user_agent",
+    DNn = "http.request_content_length",
+    yNn = "http.request_content_length_uncompressed",
+    MNn = "http.response_content_length",
+    xNn = "http.response_content_length_uncompressed",
+    SNn = "http.server_name",
+    TNn = "http.route",
+    vNn = "http.client_ip",
+    bNn = "aws.dynamodb.table_names",
+    jNn = "aws.dynamodb.consumed_capacity",
+    PNn = "aws.dynamodb.item_collection_metrics",
+    CNn = "aws.dynamodb.provisioned_read_capacity",
+    wNn = "aws.dynamodb.provisioned_write_capacity",
+    kNn = "aws.dynamodb.consistent_read",
+    ONn = "aws.dynamodb.projection",
+    UNn = "aws.dynamodb.limit",
+    NNn = "aws.dynamodb.attributes_to_get",
+    FNn = "aws.dynamodb.index_name",
+    BNn = "aws.dynamodb.select",
+    RNn = "aws.dynamodb.global_secondary_indexes",
+    WNn = "aws.dynamodb.local_secondary_indexes",
+    VNn = "aws.dynamodb.exclusive_start_table",
+    qNn = "aws.dynamodb.table_count",
+    GNn = "aws.dynamodb.scan_forward",
+    XNn = "aws.dynamodb.segment",
+    JNn = "aws.dynamodb.total_segments",
+    KNn = "aws.dynamodb.count",
+    zNn = "aws.dynamodb.scanned_count",
+    QNn = "aws.dynamodb.attribute_definitions",
+    YNn = "aws.dynamodb.global_secondary_index_updates",
+    ZNn = "messaging.system",
+    e9n = "messaging.destination",
+    t9n = "messaging.destination_kind",
+    r9n = "messaging.temp_destination",
+    n9n = "messaging.protocol",
+    i9n = "messaging.protocol_version",
+    s9n = "messaging.url",
+    o9n = "messaging.message_id",
+    a9n = "messaging.conversation_id",
+    H9n = "messaging.message_payload_size_bytes",
+    c9n = "messaging.message_payload_compressed_size_bytes",
+    A9n = "messaging.operation",
+    u9n = "messaging.consumer_id",
+    l9n = "messaging.rabbitmq.routing_key",
+    f9n = "messaging.kafka.message_key",
+    p9n = "messaging.kafka.consumer_group",
+    d9n = "messaging.kafka.client_id",
+    m9n = "messaging.kafka.partition",
+    _9n = "messaging.kafka.tombstone",
+    h9n = "rpc.system",
+    L9n = "rpc.service",
+    $9n = "rpc.method",
+    g9n = "rpc.grpc.status_code",
+    E9n = "rpc.jsonrpc.version",
+    I9n = "rpc.jsonrpc.request_id",
+    D9n = "rpc.jsonrpc.error_code",
+    y9n = "rpc.jsonrpc.error_message",
+    M9n = "message.type",
+    x9n = "message.id",
+    S9n = "message.compressed_size",
+    T9n = "message.uncompressed_size";
+  Z2n.SEMATTRS_AWS_LAMBDA_INVOKED_ARN = AUn;
+  Z2n.SEMATTRS_DB_SYSTEM = uUn;
+  Z2n.SEMATTRS_DB_CONNECTION_STRING = lUn;
+  Z2n.SEMATTRS_DB_USER = fUn;
+  Z2n.SEMATTRS_DB_JDBC_DRIVER_CLASSNAME = pUn;
+  Z2n.SEMATTRS_DB_NAME = dUn;
+  Z2n.SEMATTRS_DB_STATEMENT = mUn;
+  Z2n.SEMATTRS_DB_OPERATION = _Un;
+  Z2n.SEMATTRS_DB_MSSQL_INSTANCE_NAME = hUn;
+  Z2n.SEMATTRS_DB_CASSANDRA_KEYSPACE = LUn;
+  Z2n.SEMATTRS_DB_CASSANDRA_PAGE_SIZE = $Un;
+  Z2n.SEMATTRS_DB_CASSANDRA_CONSISTENCY_LEVEL = gUn;
+  Z2n.SEMATTRS_DB_CASSANDRA_TABLE = EUn;
+  Z2n.SEMATTRS_DB_CASSANDRA_IDEMPOTENCE = IUn;
+  Z2n.SEMATTRS_DB_CASSANDRA_SPECULATIVE_EXECUTION_COUNT = DUn;
+  Z2n.SEMATTRS_DB_CASSANDRA_COORDINATOR_ID = yUn;
+  Z2n.SEMATTRS_DB_CASSANDRA_COORDINATOR_DC = MUn;
+  Z2n.SEMATTRS_DB_HBASE_NAMESPACE = xUn;
+  Z2n.SEMATTRS_DB_REDIS_DATABASE_INDEX = SUn;
+  Z2n.SEMATTRS_DB_MONGODB_COLLECTION = TUn;
+  Z2n.SEMATTRS_DB_SQL_TABLE = vUn;
+  Z2n.SEMATTRS_EXCEPTION_TYPE = bUn;
+  Z2n.SEMATTRS_EXCEPTION_MESSAGE = jUn;
+  Z2n.SEMATTRS_EXCEPTION_STACKTRACE = PUn;
+  Z2n.SEMATTRS_EXCEPTION_ESCAPED = CUn;
+  Z2n.SEMATTRS_FAAS_TRIGGER = wUn;
+  Z2n.SEMATTRS_FAAS_EXECUTION = kUn;
+  Z2n.SEMATTRS_FAAS_DOCUMENT_COLLECTION = OUn;
+  Z2n.SEMATTRS_FAAS_DOCUMENT_OPERATION = UUn;
+  Z2n.SEMATTRS_FAAS_DOCUMENT_TIME = NUn;
+  Z2n.SEMATTRS_FAAS_DOCUMENT_NAME = FUn;
+  Z2n.SEMATTRS_FAAS_TIME = BUn;
+  Z2n.SEMATTRS_FAAS_CRON = RUn;
+  Z2n.SEMATTRS_FAAS_COLDSTART = WUn;
+  Z2n.SEMATTRS_FAAS_INVOKED_NAME = VUn;
+  Z2n.SEMATTRS_FAAS_INVOKED_PROVIDER = qUn;
+  Z2n.SEMATTRS_FAAS_INVOKED_REGION = GUn;
+  Z2n.SEMATTRS_NET_TRANSPORT = XUn;
+  Z2n.SEMATTRS_NET_PEER_IP = JUn;
+  Z2n.SEMATTRS_NET_PEER_PORT = KUn;
+  Z2n.SEMATTRS_NET_PEER_NAME = zUn;
+  Z2n.SEMATTRS_NET_HOST_IP = QUn;
+  Z2n.SEMATTRS_NET_HOST_PORT = YUn;
+  Z2n.SEMATTRS_NET_HOST_NAME = ZUn;
+  Z2n.SEMATTRS_NET_HOST_CONNECTION_TYPE = eNn;
+  Z2n.SEMATTRS_NET_HOST_CONNECTION_SUBTYPE = tNn;
+  Z2n.SEMATTRS_NET_HOST_CARRIER_NAME = rNn;
+  Z2n.SEMATTRS_NET_HOST_CARRIER_MCC = nNn;
+  Z2n.SEMATTRS_NET_HOST_CARRIER_MNC = iNn;
+  Z2n.SEMATTRS_NET_HOST_CARRIER_ICC = sNn;
+  Z2n.SEMATTRS_PEER_SERVICE = oNn;
+  Z2n.SEMATTRS_ENDUSER_ID = aNn;
+  Z2n.SEMATTRS_ENDUSER_ROLE = HNn;
+  Z2n.SEMATTRS_ENDUSER_SCOPE = cNn;
+  Z2n.SEMATTRS_THREAD_ID = ANn;
+  Z2n.SEMATTRS_THREAD_NAME = uNn;
+  Z2n.SEMATTRS_CODE_FUNCTION = lNn;
+  Z2n.SEMATTRS_CODE_NAMESPACE = fNn;
+  Z2n.SEMATTRS_CODE_FILEPATH = pNn;
+  Z2n.SEMATTRS_CODE_LINENO = dNn;
+  Z2n.SEMATTRS_HTTP_METHOD = mNn;
+  Z2n.SEMATTRS_HTTP_URL = _Nn;
+  Z2n.SEMATTRS_HTTP_TARGET = hNn;
+  Z2n.SEMATTRS_HTTP_HOST = LNn;
+  Z2n.SEMATTRS_HTTP_SCHEME = $Nn;
+  Z2n.SEMATTRS_HTTP_STATUS_CODE = gNn;
+  Z2n.SEMATTRS_HTTP_FLAVOR = ENn;
+  Z2n.SEMATTRS_HTTP_USER_AGENT = INn;
+  Z2n.SEMATTRS_HTTP_REQUEST_CONTENT_LENGTH = DNn;
+  Z2n.SEMATTRS_HTTP_REQUEST_CONTENT_LENGTH_UNCOMPRESSED = yNn;
+  Z2n.SEMATTRS_HTTP_RESPONSE_CONTENT_LENGTH = MNn;
+  Z2n.SEMATTRS_HTTP_RESPONSE_CONTENT_LENGTH_UNCOMPRESSED = xNn;
+  Z2n.SEMATTRS_HTTP_SERVER_NAME = SNn;
+  Z2n.SEMATTRS_HTTP_ROUTE = TNn;
+  Z2n.SEMATTRS_HTTP_CLIENT_IP = vNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_TABLE_NAMES = bNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_CONSUMED_CAPACITY = jNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_ITEM_COLLECTION_METRICS = PNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_PROVISIONED_READ_CAPACITY = CNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_PROVISIONED_WRITE_CAPACITY = wNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_CONSISTENT_READ = kNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_PROJECTION = ONn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_LIMIT = UNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_ATTRIBUTES_TO_GET = NNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_INDEX_NAME = FNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_SELECT = BNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_GLOBAL_SECONDARY_INDEXES = RNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_LOCAL_SECONDARY_INDEXES = WNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_EXCLUSIVE_START_TABLE = VNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_TABLE_COUNT = qNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_SCAN_FORWARD = GNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_SEGMENT = XNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_TOTAL_SEGMENTS = JNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_COUNT = KNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_SCANNED_COUNT = zNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_ATTRIBUTE_DEFINITIONS = QNn;
+  Z2n.SEMATTRS_AWS_DYNAMODB_GLOBAL_SECONDARY_INDEX_UPDATES = YNn;
+  Z2n.SEMATTRS_MESSAGING_SYSTEM = ZNn;
+  Z2n.SEMATTRS_MESSAGING_DESTINATION = e9n;
+  Z2n.SEMATTRS_MESSAGING_DESTINATION_KIND = t9n;
+  Z2n.SEMATTRS_MESSAGING_TEMP_DESTINATION = r9n;
+  Z2n.SEMATTRS_MESSAGING_PROTOCOL = n9n;
+  Z2n.SEMATTRS_MESSAGING_PROTOCOL_VERSION = i9n;
+  Z2n.SEMATTRS_MESSAGING_URL = s9n;
+  Z2n.SEMATTRS_MESSAGING_MESSAGE_ID = o9n;
+  Z2n.SEMATTRS_MESSAGING_CONVERSATION_ID = a9n;
+  Z2n.SEMATTRS_MESSAGING_MESSAGE_PAYLOAD_SIZE_BYTES = H9n;
+  Z2n.SEMATTRS_MESSAGING_MESSAGE_PAYLOAD_COMPRESSED_SIZE_BYTES = c9n;
+  Z2n.SEMATTRS_MESSAGING_OPERATION = A9n;
+  Z2n.SEMATTRS_MESSAGING_CONSUMER_ID = u9n;
+  Z2n.SEMATTRS_MESSAGING_RABBITMQ_ROUTING_KEY = l9n;
+  Z2n.SEMATTRS_MESSAGING_KAFKA_MESSAGE_KEY = f9n;
+  Z2n.SEMATTRS_MESSAGING_KAFKA_CONSUMER_GROUP = p9n;
+  Z2n.SEMATTRS_MESSAGING_KAFKA_CLIENT_ID = d9n;
+  Z2n.SEMATTRS_MESSAGING_KAFKA_PARTITION = m9n;
+  Z2n.SEMATTRS_MESSAGING_KAFKA_TOMBSTONE = _9n;
+  Z2n.SEMATTRS_RPC_SYSTEM = h9n;
+  Z2n.SEMATTRS_RPC_SERVICE = L9n;
+  Z2n.SEMATTRS_RPC_METHOD = $9n;
+  Z2n.SEMATTRS_RPC_GRPC_STATUS_CODE = g9n;
+  Z2n.SEMATTRS_RPC_JSONRPC_VERSION = E9n;
+  Z2n.SEMATTRS_RPC_JSONRPC_REQUEST_ID = I9n;
+  Z2n.SEMATTRS_RPC_JSONRPC_ERROR_CODE = D9n;
+  Z2n.SEMATTRS_RPC_JSONRPC_ERROR_MESSAGE = y9n;
+  Z2n.SEMATTRS_MESSAGE_TYPE = M9n;
+  Z2n.SEMATTRS_MESSAGE_ID = x9n;
+  Z2n.SEMATTRS_MESSAGE_COMPRESSED_SIZE = S9n;
+  Z2n.SEMATTRS_MESSAGE_UNCOMPRESSED_SIZE = T9n;
+  Z2n.SemanticAttributes = vE.createConstMap([
+    AUn,
+    uUn,
+    lUn,
+    fUn,
+    pUn,
+    dUn,
+    mUn,
+    _Un,
+    hUn,
+    LUn,
+    $Un,
+    gUn,
+    EUn,
+    IUn,
+    DUn,
+    yUn,
+    MUn,
+    xUn,
+    SUn,
+    TUn,
+    vUn,
+    bUn,
+    jUn,
+    PUn,
+    CUn,
+    wUn,
+    kUn,
+    OUn,
+    UUn,
+    NUn,
+    FUn,
+    BUn,
+    RUn,
+    WUn,
+    VUn,
+    qUn,
+    GUn,
+    XUn,
+    JUn,
+    KUn,
+    zUn,
+    QUn,
+    YUn,
+    ZUn,
+    eNn,
+    tNn,
+    rNn,
+    nNn,
+    iNn,
+    sNn,
+    oNn,
+    aNn,
+    HNn,
+    cNn,
+    ANn,
+    uNn,
+    lNn,
+    fNn,
+    pNn,
+    dNn,
+    mNn,
+    _Nn,
+    hNn,
+    LNn,
+    $Nn,
+    gNn,
+    ENn,
+    INn,
+    DNn,
+    yNn,
+    MNn,
+    xNn,
+    SNn,
+    TNn,
+    vNn,
+    bNn,
+    jNn,
+    PNn,
+    CNn,
+    wNn,
+    kNn,
+    ONn,
+    UNn,
+    NNn,
+    FNn,
+    BNn,
+    RNn,
+    WNn,
+    VNn,
+    qNn,
+    GNn,
+    XNn,
+    JNn,
+    KNn,
+    zNn,
+    QNn,
+    YNn,
+    ZNn,
+    e9n,
+    t9n,
+    r9n,
+    n9n,
+    i9n,
+    s9n,
+    o9n,
+    a9n,
+    H9n,
+    c9n,
+    A9n,
+    u9n,
+    l9n,
+    f9n,
+    p9n,
+    d9n,
+    m9n,
+    _9n,
+    h9n,
+    L9n,
+    $9n,
+    g9n,
+    E9n,
+    I9n,
+    D9n,
+    y9n,
+    M9n,
+    x9n,
+    S9n,
+    T9n,
+  ]);
+  var v9n = "other_sql",
+    b9n = "mssql",
+    j9n = "mysql",
+    P9n = "oracle",
+    C9n = "db2",
+    w9n = "postgresql",
+    k9n = "redshift",
+    O9n = "hive",
+    U9n = "cloudscape",
+    N9n = "hsqldb",
+    F9n = "progress",
+    B9n = "maxdb",
+    R9n = "hanadb",
+    W9n = "ingres",
+    V9n = "firstsql",
+    q9n = "edb",
+    G9n = "cache",
+    X9n = "adabas",
+    J9n = "firebird",
+    K9n = "derby",
+    z9n = "filemaker",
+    Q9n = "informix",
+    Y9n = "instantdb",
+    Z9n = "interbase",
+    eFn = "mariadb",
+    tFn = "netezza",
+    rFn = "pervasive",
+    nFn = "pointbase",
+    iFn = "sqlite",
+    sFn = "sybase",
+    oFn = "teradata",
+    aFn = "vertica",
+    HFn = "h2",
+    cFn = "coldfusion",
+    AFn = "cassandra",
+    uFn = "hbase",
+    lFn = "mongodb",
+    fFn = "redis",
+    pFn = "couchbase",
+    dFn = "couchdb",
+    mFn = "cosmosdb",
+    _Fn = "dynamodb",
+    hFn = "neo4j",
+    LFn = "geode",
+    $Fn = "elasticsearch",
+    gFn = "memcached",
+    EFn = "cockroachdb";
+  Z2n.DBSYSTEMVALUES_OTHER_SQL = v9n;
+  Z2n.DBSYSTEMVALUES_MSSQL = b9n;
+  Z2n.DBSYSTEMVALUES_MYSQL = j9n;
+  Z2n.DBSYSTEMVALUES_ORACLE = P9n;
+  Z2n.DBSYSTEMVALUES_DB2 = C9n;
+  Z2n.DBSYSTEMVALUES_POSTGRESQL = w9n;
+  Z2n.DBSYSTEMVALUES_REDSHIFT = k9n;
+  Z2n.DBSYSTEMVALUES_HIVE = O9n;
+  Z2n.DBSYSTEMVALUES_CLOUDSCAPE = U9n;
+  Z2n.DBSYSTEMVALUES_HSQLDB = N9n;
+  Z2n.DBSYSTEMVALUES_PROGRESS = F9n;
+  Z2n.DBSYSTEMVALUES_MAXDB = B9n;
+  Z2n.DBSYSTEMVALUES_HANADB = R9n;
+  Z2n.DBSYSTEMVALUES_INGRES = W9n;
+  Z2n.DBSYSTEMVALUES_FIRSTSQL = V9n;
+  Z2n.DBSYSTEMVALUES_EDB = q9n;
+  Z2n.DBSYSTEMVALUES_CACHE = G9n;
+  Z2n.DBSYSTEMVALUES_ADABAS = X9n;
+  Z2n.DBSYSTEMVALUES_FIREBIRD = J9n;
+  Z2n.DBSYSTEMVALUES_DERBY = K9n;
+  Z2n.DBSYSTEMVALUES_FILEMAKER = z9n;
+  Z2n.DBSYSTEMVALUES_INFORMIX = Q9n;
+  Z2n.DBSYSTEMVALUES_INSTANTDB = Y9n;
+  Z2n.DBSYSTEMVALUES_INTERBASE = Z9n;
+  Z2n.DBSYSTEMVALUES_MARIADB = eFn;
+  Z2n.DBSYSTEMVALUES_NETEZZA = tFn;
+  Z2n.DBSYSTEMVALUES_PERVASIVE = rFn;
+  Z2n.DBSYSTEMVALUES_POINTBASE = nFn;
+  Z2n.DBSYSTEMVALUES_SQLITE = iFn;
+  Z2n.DBSYSTEMVALUES_SYBASE = sFn;
+  Z2n.DBSYSTEMVALUES_TERADATA = oFn;
+  Z2n.DBSYSTEMVALUES_VERTICA = aFn;
+  Z2n.DBSYSTEMVALUES_H2 = HFn;
+  Z2n.DBSYSTEMVALUES_COLDFUSION = cFn;
+  Z2n.DBSYSTEMVALUES_CASSANDRA = AFn;
+  Z2n.DBSYSTEMVALUES_HBASE = uFn;
+  Z2n.DBSYSTEMVALUES_MONGODB = lFn;
+  Z2n.DBSYSTEMVALUES_REDIS = fFn;
+  Z2n.DBSYSTEMVALUES_COUCHBASE = pFn;
+  Z2n.DBSYSTEMVALUES_COUCHDB = dFn;
+  Z2n.DBSYSTEMVALUES_COSMOSDB = mFn;
+  Z2n.DBSYSTEMVALUES_DYNAMODB = _Fn;
+  Z2n.DBSYSTEMVALUES_NEO4J = hFn;
+  Z2n.DBSYSTEMVALUES_GEODE = LFn;
+  Z2n.DBSYSTEMVALUES_ELASTICSEARCH = $Fn;
+  Z2n.DBSYSTEMVALUES_MEMCACHED = gFn;
+  Z2n.DBSYSTEMVALUES_COCKROACHDB = EFn;
+  Z2n.DbSystemValues = vE.createConstMap([
+    v9n,
+    b9n,
+    j9n,
+    P9n,
+    C9n,
+    w9n,
+    k9n,
+    O9n,
+    U9n,
+    N9n,
+    F9n,
+    B9n,
+    R9n,
+    W9n,
+    V9n,
+    q9n,
+    G9n,
+    X9n,
+    J9n,
+    K9n,
+    z9n,
+    Q9n,
+    Y9n,
+    Z9n,
+    eFn,
+    tFn,
+    rFn,
+    nFn,
+    iFn,
+    sFn,
+    oFn,
+    aFn,
+    HFn,
+    cFn,
+    AFn,
+    uFn,
+    lFn,
+    fFn,
+    pFn,
+    dFn,
+    mFn,
+    _Fn,
+    hFn,
+    LFn,
+    $Fn,
+    gFn,
+    EFn,
+  ]);
+  var IFn = "all",
+    DFn = "each_quorum",
+    yFn = "quorum",
+    MFn = "local_quorum",
+    xFn = "one",
+    SFn = "two",
+    TFn = "three",
+    vFn = "local_one",
+    bFn = "any",
+    jFn = "serial",
+    PFn = "local_serial";
+  Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_ALL = IFn;
+  Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_EACH_QUORUM = DFn;
+  Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_QUORUM = yFn;
+  Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_LOCAL_QUORUM = MFn;
+  Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_ONE = xFn;
+  Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_TWO = SFn;
+  Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_THREE = TFn;
+  Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_LOCAL_ONE = vFn;
+  Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_ANY = bFn;
+  Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_SERIAL = jFn;
+  Z2n.DBCASSANDRACONSISTENCYLEVELVALUES_LOCAL_SERIAL = PFn;
+  Z2n.DbCassandraConsistencyLevelValues = vE.createConstMap([
+    IFn,
+    DFn,
+    yFn,
+    MFn,
+    xFn,
+    SFn,
+    TFn,
+    vFn,
+    bFn,
+    jFn,
+    PFn,
+  ]);
+  var CFn = "datasource",
+    wFn = "http",
+    kFn = "pubsub",
+    OFn = "timer",
+    UFn = "other";
+  Z2n.FAASTRIGGERVALUES_DATASOURCE = CFn;
+  Z2n.FAASTRIGGERVALUES_HTTP = wFn;
+  Z2n.FAASTRIGGERVALUES_PUBSUB = kFn;
+  Z2n.FAASTRIGGERVALUES_TIMER = OFn;
+  Z2n.FAASTRIGGERVALUES_OTHER = UFn;
+  Z2n.FaasTriggerValues = vE.createConstMap([CFn, wFn, kFn, OFn, UFn]);
+  var NFn = "insert",
+    FFn = "edit",
+    BFn = "delete";
+  Z2n.FAASDOCUMENTOPERATIONVALUES_INSERT = NFn;
+  Z2n.FAASDOCUMENTOPERATIONVALUES_EDIT = FFn;
+  Z2n.FAASDOCUMENTOPERATIONVALUES_DELETE = BFn;
+  Z2n.FaasDocumentOperationValues = vE.createConstMap([NFn, FFn, BFn]);
+  var RFn = "alibaba_cloud",
+    WFn = "aws",
+    VFn = "azure",
+    qFn = "gcp";
+  Z2n.FAASINVOKEDPROVIDERVALUES_ALIBABA_CLOUD = RFn;
+  Z2n.FAASINVOKEDPROVIDERVALUES_AWS = WFn;
+  Z2n.FAASINVOKEDPROVIDERVALUES_AZURE = VFn;
+  Z2n.FAASINVOKEDPROVIDERVALUES_GCP = qFn;
+  Z2n.FaasInvokedProviderValues = vE.createConstMap([RFn, WFn, VFn, qFn]);
+  var GFn = "ip_tcp",
+    XFn = "ip_udp",
+    JFn = "ip",
+    KFn = "unix",
+    zFn = "pipe",
+    QFn = "inproc",
+    YFn = "other";
+  Z2n.NETTRANSPORTVALUES_IP_TCP = GFn;
+  Z2n.NETTRANSPORTVALUES_IP_UDP = XFn;
+  Z2n.NETTRANSPORTVALUES_IP = JFn;
+  Z2n.NETTRANSPORTVALUES_UNIX = KFn;
+  Z2n.NETTRANSPORTVALUES_PIPE = zFn;
+  Z2n.NETTRANSPORTVALUES_INPROC = QFn;
+  Z2n.NETTRANSPORTVALUES_OTHER = YFn;
+  Z2n.NetTransportValues = vE.createConstMap([GFn, XFn, JFn, KFn, zFn, QFn, YFn]);
+  var ZFn = "wifi",
+    e2n = "wired",
+    t2n = "cell",
+    r2n = "unavailable",
+    n2n = "unknown";
+  Z2n.NETHOSTCONNECTIONTYPEVALUES_WIFI = ZFn;
+  Z2n.NETHOSTCONNECTIONTYPEVALUES_WIRED = e2n;
+  Z2n.NETHOSTCONNECTIONTYPEVALUES_CELL = t2n;
+  Z2n.NETHOSTCONNECTIONTYPEVALUES_UNAVAILABLE = r2n;
+  Z2n.NETHOSTCONNECTIONTYPEVALUES_UNKNOWN = n2n;
+  Z2n.NetHostConnectionTypeValues = vE.createConstMap([ZFn, e2n, t2n, r2n, n2n]);
+  var i2n = "gprs",
+    s2n = "edge",
+    o2n = "umts",
+    a2n = "cdma",
+    H2n = "evdo_0",
+    c2n = "evdo_a",
+    A2n = "cdma2000_1xrtt",
+    u2n = "hsdpa",
+    l2n = "hsupa",
+    f2n = "hspa",
+    p2n = "iden",
+    d2n = "evdo_b",
+    m2n = "lte",
+    _2n = "ehrpd",
+    h2n = "hspap",
+    L2n = "gsm",
+    $2n = "td_scdma",
+    g2n = "iwlan",
+    E2n = "nr",
+    I2n = "nrnsa",
+    D2n = "lte_ca";
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_GPRS = i2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_EDGE = s2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_UMTS = o2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_CDMA = a2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_EVDO_0 = H2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_EVDO_A = c2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_CDMA2000_1XRTT = A2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_HSDPA = u2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_HSUPA = l2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_HSPA = f2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_IDEN = p2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_EVDO_B = d2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_LTE = m2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_EHRPD = _2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_HSPAP = h2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_GSM = L2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_TD_SCDMA = $2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_IWLAN = g2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_NR = E2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_NRNSA = I2n;
+  Z2n.NETHOSTCONNECTIONSUBTYPEVALUES_LTE_CA = D2n;
+  Z2n.NetHostConnectionSubtypeValues = vE.createConstMap([
+    i2n,
+    s2n,
+    o2n,
+    a2n,
+    H2n,
+    c2n,
+    A2n,
+    u2n,
+    l2n,
+    f2n,
+    p2n,
+    d2n,
+    m2n,
+    _2n,
+    h2n,
+    L2n,
+    $2n,
+    g2n,
+    E2n,
+    I2n,
+    D2n,
+  ]);
+  var y2n = "1.0",
+    M2n = "1.1",
+    x2n = "2.0",
+    S2n = "SPDY",
+    T2n = "QUIC";
+  Z2n.HTTPFLAVORVALUES_HTTP_1_0 = y2n;
+  Z2n.HTTPFLAVORVALUES_HTTP_1_1 = M2n;
+  Z2n.HTTPFLAVORVALUES_HTTP_2_0 = x2n;
+  Z2n.HTTPFLAVORVALUES_SPDY = S2n;
+  Z2n.HTTPFLAVORVALUES_QUIC = T2n;
+  Z2n.HttpFlavorValues = { HTTP_1_0: y2n, HTTP_1_1: M2n, HTTP_2_0: x2n, SPDY: S2n, QUIC: T2n };
+  var v2n = "queue",
+    b2n = "topic";
+  Z2n.MESSAGINGDESTINATIONKINDVALUES_QUEUE = v2n;
+  Z2n.MESSAGINGDESTINATIONKINDVALUES_TOPIC = b2n;
+  Z2n.MessagingDestinationKindValues = vE.createConstMap([v2n, b2n]);
+  var j2n = "receive",
+    P2n = "process";
+  Z2n.MESSAGINGOPERATIONVALUES_RECEIVE = j2n;
+  Z2n.MESSAGINGOPERATIONVALUES_PROCESS = P2n;
+  Z2n.MessagingOperationValues = vE.createConstMap([j2n, P2n]);
+  var C2n = 0,
+    w2n = 1,
+    k2n = 2,
+    O2n = 3,
+    U2n = 4,
+    N2n = 5,
+    F2n = 6,
+    B2n = 7,
+    R2n = 8,
+    W2n = 9,
+    V2n = 10,
+    q2n = 11,
+    G2n = 12,
+    X2n = 13,
+    J2n = 14,
+    K2n = 15,
+    z2n = 16;
+  Z2n.RPCGRPCSTATUSCODEVALUES_OK = C2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_CANCELLED = w2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_UNKNOWN = k2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_INVALID_ARGUMENT = O2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_DEADLINE_EXCEEDED = U2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_NOT_FOUND = N2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_ALREADY_EXISTS = F2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_PERMISSION_DENIED = B2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_RESOURCE_EXHAUSTED = R2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_FAILED_PRECONDITION = W2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_ABORTED = V2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_OUT_OF_RANGE = q2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_UNIMPLEMENTED = G2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_INTERNAL = X2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_UNAVAILABLE = J2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_DATA_LOSS = K2n;
+  Z2n.RPCGRPCSTATUSCODEVALUES_UNAUTHENTICATED = z2n;
+  Z2n.RpcGrpcStatusCodeValues = {
+    OK: C2n,
+    CANCELLED: w2n,
+    UNKNOWN: k2n,
+    INVALID_ARGUMENT: O2n,
+    DEADLINE_EXCEEDED: U2n,
+    NOT_FOUND: N2n,
+    ALREADY_EXISTS: F2n,
+    PERMISSION_DENIED: B2n,
+    RESOURCE_EXHAUSTED: R2n,
+    FAILED_PRECONDITION: W2n,
+    ABORTED: V2n,
+    OUT_OF_RANGE: q2n,
+    UNIMPLEMENTED: G2n,
+    INTERNAL: X2n,
+    UNAVAILABLE: J2n,
+    DATA_LOSS: K2n,
+    UNAUTHENTICATED: z2n,
+  };
+  var Q2n = "SENT",
+    Y2n = "RECEIVED";
+  Z2n.MESSAGETYPEVALUES_SENT = Q2n;
+  Z2n.MESSAGETYPEVALUES_RECEIVED = Y2n;
+  Z2n.MessageTypeValues = vE.createConstMap([Q2n, Y2n]);
+});

@@ -1,0 +1,4 @@
+
+function Fn() {
+  return Ze;
+}

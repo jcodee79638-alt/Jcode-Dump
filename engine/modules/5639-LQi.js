@@ -1,0 +1,2 @@
+
+var LQi, $Qi, gQi;

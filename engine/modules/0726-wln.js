@@ -1,0 +1,2 @@
+
+var wln, kln;

@@ -1,0 +1,2 @@
+Jac Code Desktop Upgrade 2.9.0
+Derived from MIT-licensed OpenCode. Existing notices are retained. This compatibility launcher verifies and installs the desktop release; it does not open conversations or perform inference.

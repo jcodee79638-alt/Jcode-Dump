@@ -1,0 +1,4 @@
+
+function GJe() {
+  return dRa;
+}

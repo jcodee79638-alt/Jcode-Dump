@@ -1,0 +1,45 @@
+
+function p4a(e, t, r, s, a) {
+  return `${u4a(e)}
+
+Before executing the command, please follow these steps:
+
+1. Directory Verification:
+   - If the command will create new directories or files, first use \`Test-Path -LiteralPath <parent>\` to verify the parent directory exists and is the correct location
+   - For example, before creating \`foo${r}bar\`, first use \`Test-Path -LiteralPath "foo"\` to check that \`foo\` exists and is the intended parent directory
+
+2. Command Execution:
+   - Always quote file paths that contain spaces with double quotes (e.g., Remove-Item -LiteralPath "path with spaces${r}file.txt")
+   - Examples of proper quoting:
+     - New-Item -ItemType Directory -Path "My Documents" (correct)
+     - New-Item -ItemType Directory -Path My Documents (incorrect - path is split)
+     - & "path with spaces${r}script.ps1" (correct)
+     - path with spaces${r}script.ps1 (incorrect - path is split and not invoked)
+   - After ensuring proper quoting, execute the command.
+   - Capture the output of the command.
+
+Usage notes:
+  - The command argument is required.
+  - You can specify an optional timeout in milliseconds. If not specified, commands will time out after ${a}ms.
+  - If the output exceeds ${s.maxLines} lines or ${s.maxBytes} bytes, it will be truncated and the full output will be written to a file. You can use Read with offset/limit to read specific sections or Grep to search the full content. Do NOT use \`Select-Object -First\`, \`Select-Object -Last\`, or other truncation commands to limit output; the full output will already be captured to a file for more precise searching.
+
+  - Avoid using Shell with PowerShell file/content cmdlets unless explicitly instructed or when these cmdlets are truly necessary for the task. Instead, always prefer using the dedicated tools for these commands:
+    - File search: Use Glob (NOT Get-ChildItem)
+    - Content search: Use Grep (NOT Select-String)
+    - Read files: Use Read (NOT Get-Content)
+    - Edit files: Use Edit (NOT Set-Content)
+    - Write files: Use Write (NOT Set-Content/Out-File or here-strings)
+    - Communication: Output text directly (NOT Write-Output/Write-Host)
+  - When issuing multiple commands:
+    - If the commands are independent and can run in parallel, make multiple bash tool calls in a single message. For example, if you need to run "git status" and "git diff", send a single message with two bash tool calls in parallel.
+    - ${t}
+    - Use \`;\` only when you need to run commands sequentially but don't care if earlier commands fail
+    - DO NOT use newlines to separate commands (newlines are ok in quoted strings)
+  - AVOID changing directories inside the command. Use the \`workdir\` parameter to change directories instead.
+    <good-example>
+    Use workdir="project${r}subdir" with command: pytest tests
+    </good-example>
+    <bad-example>
+    ${e === "powershell" ? `Set-Location -LiteralPath "project${r}subdir"; if ($?) { pytest tests }` : `Set-Location -LiteralPath "project${r}subdir" && pytest tests`}
+    </bad-example>`;
+}

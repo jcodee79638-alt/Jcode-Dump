@@ -1,0 +1,2 @@
+
+var Rda, vDi;

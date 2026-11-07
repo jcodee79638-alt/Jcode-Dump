@@ -1,0 +1,2 @@
+
+class Er extends Ji {}

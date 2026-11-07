@@ -1,0 +1,2 @@
+
+var ALn, hrr, cLn;

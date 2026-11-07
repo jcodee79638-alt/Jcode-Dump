@@ -1,0 +1,2 @@
+
+var kfn, Ofn;

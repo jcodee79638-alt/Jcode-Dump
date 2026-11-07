@@ -1,0 +1,2 @@
+
+var Emt, jLn;

@@ -1,0 +1,2 @@
+
+var Ec, Td, Zp;

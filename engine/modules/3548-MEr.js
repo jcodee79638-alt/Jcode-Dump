@@ -1,0 +1,4 @@
+
+function MEr() {
+  return GDa;
+}

@@ -1,0 +1,2 @@
+
+var bRi, jRi, YFa;

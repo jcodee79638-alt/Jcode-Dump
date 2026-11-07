@@ -1,0 +1,2 @@
+
+var QQs, tht;

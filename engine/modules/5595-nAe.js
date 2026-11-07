@@ -1,0 +1,2 @@
+
+var nAe, OQa, BPr;

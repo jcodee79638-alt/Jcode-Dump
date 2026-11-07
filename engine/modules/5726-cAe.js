@@ -1,0 +1,17 @@
+
+var cAe,
+  prH,
+  PZi,
+  drH,
+  wZi,
+  ECr,
+  DCr,
+  kZi,
+  ICr,
+  OZi,
+  UZi,
+  DR,
+  eCA,
+  mrH,
+  CZi = 5000,
+  yZi;

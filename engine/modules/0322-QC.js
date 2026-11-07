@@ -1,0 +1,4 @@
+
+function QC() {
+  return von;
+}

@@ -1,0 +1,35 @@
+
+function NZs(e) {
+  return {
+    $schema: e.$schema,
+    shell: e.shell,
+    model: e.model,
+    default_agent: e.default_agent,
+    autoupdate: e.autoupdate,
+    share: e.share ?? (e.autoshare ? "auto" : void 0),
+    enterprise: e.enterprise,
+    username: e.username,
+    permissions: gMn(e.permission, e.tools),
+    agents: BZs(e),
+    snapshots: e.snapshot,
+    watcher: e.watcher,
+    formatter: e.formatter,
+    lsp: e.lsp,
+    attachments: e.attachment,
+    tool_output: e.tool_output,
+    mcp: RZs(e),
+    compaction: e.compaction && {
+      auto: e.compaction.auto,
+      prune: e.compaction.prune,
+      keep: { tokens: e.compaction.preserve_recent_tokens },
+      buffer: e.compaction.reserved,
+    },
+    skills: e.skills && [...(e.skills.paths ?? []), ...(e.skills.urls ?? [])],
+    commands: e.command,
+    instructions: e.instructions,
+    references: e.references ?? e.reference,
+    plugins: e.plugin?.map((t) => (typeof t === "string" ? t : { package: t[0], options: t[1] })),
+    experimental: e.experimental?.policies && { policies: e.experimental.policies },
+    providers: VZs(e.provider),
+  };
+}

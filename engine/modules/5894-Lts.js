@@ -1,0 +1,2 @@
+
+var Lts, qiH, GiH;

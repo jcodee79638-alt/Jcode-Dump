@@ -1,0 +1,2 @@
+
+var Aua, oLr, aLr;

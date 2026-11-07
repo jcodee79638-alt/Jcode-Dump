@@ -1,0 +1,4 @@
+
+var fes = ne(() => {
+  rnH = new Set(["/site.webmanifest", "/web-app-manifest-192x192.png", "/web-app-manifest-512x512.png"]);
+});

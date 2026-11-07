@@ -1,0 +1,4 @@
+
+function APi(e, t) {
+  return new e({ type: "string", format: "email", check: "string_format", abort: !1, ...yA(t) });
+}

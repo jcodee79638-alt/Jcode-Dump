@@ -1,0 +1,15 @@
+Jac Code Desktop 6.3.15
+
+Open Jac Code from your desktop or Start menu. The jac command opens the same app. Sign in or register inside the application. Projects and conversations stay on this computer during updates and uninstall.
+
+Start a chat directly or open an existing project. Open chat folder shows the conversation workspace. Your model and Thinking choices, access mode and remaining allowance are beside the composer. Tool activity is expandable; private reasoning is not displayed. Permissions and questions remain visible.
+
+Reconnect observes existing work without sending another request. After an interruption, inspect the saved task report before explicitly continuing. Requests are not automatically replayed. Queue request saves follow-ups during active work; review and resume the queue after startup. Uncertain admissions require attention and never replay automatically.
+
+Workspace tools provides literal project-code search, setup inspection and start/build/test argv profiles. Inspection installs nothing. Each command requires native confirmation; Read access cannot execute commands. Task reports show observed timeline events, actual check exits, file comparisons and available per-file undo. Later conflicting edits are kept.
+
+Open Preview explicitly when ready. HTML previews support element-reference review and bounded diagnostics that enter an editable draft only on request. Diagnostics and element selection are unavailable for local HTTP previews. Attachment viewers retain available original references; earlier conversations may not retain original files.
+
+Settings includes local rotating backups and support report previews. Project working files and credentials are excluded from these backups. Inspect partial/skipped backup scopes before restoration; restoration requires confirmation, idle workspaces and an app restart. Support reports exclude messages, prompts, command outputs, filenames, paths and credentials. Reports are saved locally and never uploaded automatically.
+
+Only enable MCP servers you trust. Install required runtimes yourself. Agent-proposed installations require explicit confirmation; enter server credentials only in Settings. MCP sampling and elicitation are not supported. Images and PDF pages are interpreted visually; PDFs are limited to four pages. Uploads are limited to 8 MB per file, 200 KB extracted text and four images per message. Office documents are extracted as text. GIFs use the first frame; images are resized and metadata is stripped locally. Keep Ask access mode for unfamiliar projects and attachments.

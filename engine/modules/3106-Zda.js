@@ -1,0 +1,2 @@
+
+var Zda, ema;
